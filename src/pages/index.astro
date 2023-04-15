@@ -1,7 +1,8 @@
 ---
+import '@picocss/pico'
 ---
 
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -10,6 +11,56 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main class="container">
+			<h1>PainScore</h1>
+			<article>
+				<h2>Create new pain diary</h2>
+				
+				<form action="/api/new" method="POST">
+					<div class="grid">
+						<div>
+							<label for="patient_email">Patient email</label>
+							<input type="email" name="patient_email" id="patient_email">
+						</div>
+						<div>
+							<label for="referrer_email">Referrer email</label>
+							<input type="email" name="referrer_email" id="referrer_email">
+						</div>
+					</div>
+
+					<div class="grid">
+						<div>
+							<label for="datetime">Date / Time of Procedure</label>
+							<input type="datetime-local" name="datetime" id="datetime">
+						</div>
+						<div></div>
+					</div>
+
+					<div class="grid">
+						<div>
+							<label for="side">Side</label>
+							<select name="side" id="side">
+								<option value=""></option>
+								<option value="left">Left</option>
+								<option value="right">Right</option>
+								<option value="bilateral">Bilateral</option>
+								<option value="NA">Not Applicable</option>
+							</select>
+						</div>
+						<div>
+							<label for="intervention_description">Intervention</label>
+							<input type="text" name="intervention_description" id="intervention_description">
+						</div>
+					</div>
+					<div class="grid">
+						<div>
+							<button type="submit" id="submitButton">Create</button>
+						</div>
+						<div></div>
+					</div>
+				</form>
+
+			</article>
+		  </main>
 	</body>
 </html>

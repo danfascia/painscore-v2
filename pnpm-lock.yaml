@@ -1,10 +1,14 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@picocss/pico': ^1.5.9
   astro: ^2.3.0
+  pocketbase: ^0.13.1
 
 dependencies:
+  '@picocss/pico': 1.5.9
   astro: 2.3.0
+  pocketbase: 0.13.1
 
 packages:
 
@@ -596,6 +600,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: false
+
+  /@picocss/pico/1.5.9:
+    resolution: {integrity: sha512-zgckSi9Fy2LQ+OIEGo/o7hZzgCf28ldRb2k/wrWV1Y/7LHNMYilc5Z2MbQBb1cvO8U2a94vSF8jh80HQNFLwdg==}
     dev: false
 
   /@pkgr/utils/2.3.1:
@@ -2216,6 +2224,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: false
+
+  /pocketbase/0.13.1:
+    resolution: {integrity: sha512-3Wsj87VcmvqmziWXdXWKyCDKbA3rfMR5wlP64UJj+7KBss4ZEXv3Z1ZXhLe5OOiFwF+ErbcO9bzWBMrVLfsIpQ==}
     dev: false
 
   /postcss/8.4.21:
